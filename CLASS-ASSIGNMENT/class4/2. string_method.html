@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>string in js.</title>
+</head>
+<body>
+    
+
+    <script>
+        // string is immutable.
+        // trim:- 
+        // 
+        // let txt = 'i   isha verma    .';
+        // console.log(txt.trim());
+
+        // touppercase and tolowercase
+        let text = "mobile";
+        console.log(text.toUpperCase());
+        console.log(text.toLowerCase());
+        
+        // 3. indexOf:
+        let msg = "meet me!";
+        console.log(msg.indexOf('m'));
+
+        // 4. slice:(start, end-1)
+        let message = "meet me ";
+        console.log(message.slice(2));
+        console.log(message.slice(2,6)); 
+        console.log(message.slice(-2)); 
+
+        // 5. substring try krke ana
+
+        // 6. replace 
+        let mssg = "heheheh hee hhehh";
+        console.log(mssg.replace("hee", "hha"));
+
+        // 7. repeat
+        let a = "navya is a good girl\n";
+        console.log(a.repeat(3))
+
+        // 8. method chaining:
+        let b="    hey thEre1     ";
+        // let trimval = b.trim();
+        // console.log(trimval.toUpperCase());
+
+        console.log(b.trim().toUpperCase());
+
+        // 9. string template literal:
+        // Miss. isha verma
+        let firstname= "isha";
+        let laastname = "verma";
+        console.log("Ms." + firstname+ " "+laastname+ " ");
+
+        console.log(`Ms.${firstname} ${laastname}`);
+
+    </script>
+</body>
+</html>
