@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        section{
+            border: 2px solid #ccc;
+            padding: 1rem;
+            margin: 10px auto;
+
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+        }
+
+        /* @media (max-width:520px)
+        {
+            section{
+                background-color: aquamarine;
+                text-transform: uppercase;
+            }
+            h1{
+                color: azure;
+                text-transform: capitalize;
+            }
+        } */
+
+        /* by deafult screen hota h  */
+        @media screen and  (max-width:520px)
+        {
+            section{
+                background-color: aquamarine;
+                text-transform: uppercase;
+            }
+            h1{
+                color: whitesmoke;
+                text-transform: capitalize;
+            }
+        }
+
+        /* landscape */
+        @media(orientation : landscape)
+        {
+            section{
+                background-color: rgb(178, 136, 136);
+            }
+            section p{
+                text-transform: uppercase;
+            }
+        }
+
+
+        /* portrait */
+        @media(orientation : portrait)
+        {
+            section{
+                background-color: rgb(102, 149, 119);
+            }
+            section p{
+                text-transform: uppercase;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>media query</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga molestias nobis recusandae culpa eius. Facilis at ut magnam aut sapiente modi officiis autem itaque. Praesentium tempora voluptatibus provident alias modi!</p>
+    </section>
+    <section>
+
+    </section>
+</body>
+</html>
